@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <img src="img\fondo.png" alt="fondo" class="fondo" width="1345px" height="1500px"> 
+    <img src="img\poke.png" alt="pokemon" class="logo" >
+    <div class="rectangulo"></div>
+    <div class="rectangulo1"></div>
+    <div class="rectangulo2">
+        <div class="rect center">
+            <p>Front</p>
+        </div>
+        <div class="rect1 center">
+            <p>Back</p>
+        </div>
+        <div class="rect2 center">
+            <p>Dream</p>
+        </div>
+        <div class="rect3 center">
+            <p>Home</p>
+        </div>
+        <img src="img\pokeball.png" alt="Pokemon" id="pokeImg" class="img">
+        <img src="img\pokeball.png" alt="Pokemon" id="pokeImgB" class="img1">
+        <img src="img\pokeball.png" alt="Pokemon" id="pokeImgC" class="img2">
+        <img src="img\pokeball.png" alt="Pokemon" id="pokeImgD" class="img3">
+    </div>
+    <div class="rect4"></div>
+    <div class="rect5">
+        <div class="rect6"></div>
+        <div class="rect7">
+            <div class="t-container">
+                <ul class="t-tabs">  
+
+                  <li class="t-tab">Estadisticas</li> 
+                  <li class="t-tab">Movimientos</li>  
+                  <li class="t-tab">Habilidades</li>
+                </ul>
+                <ul class="t-contents">
+
+                  <li class="t-content">
+                    <p id="estadisticasHp">Cargando HP</p>
+                    <p id="estadisticasAtk">Cargando ATK</p>
+                    <p id="estadisticasDef">Cargando DEF</p>
+                    <p id="estadisticasSAtk">Cargando SATK</p>
+                    <p id="estadisticasSDef">Cargando SDEF</p>
+                    <p id="estadisticasSPD">Cargando SPD</p>
+
+                  </li>
+                  <li class="t-content">
+                    <p id="movimiento">Cargando movimientos</p>
+
+                  </li>
+                  <li class="t-content">
+                    <p id="habilidad">Cargando habilidades</p>
+
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <div class="lado">
+        <input type="text" placeholder="pikachu" id="pokeName" name="pokeName" class="poke" >
+        <a title="Busca" onclick="fetchPokemon()">
+        <button onclick="fetchPokemon()" class="busca"><img src="img\busca.png" width="30" height="30"></button>
+        <div class="rectder">
+            <p class="name" id="name">Cargando nombre</p>
+            <p id="id">Cargando ID</p>
+            <p class="name" id="peso">Cargando peso</p>
+            <p class="name" id="altura">Cargando altura</p>
+            <p id="tipo">Cargando tipo</p>
+            <p class="name" id="xp">Cargando Xp</p>
+        </div>
+      
+    </div>
+    
+</body>
+<footer>
+    <script src="./index.js"></script>
+</footer>
+</html>
